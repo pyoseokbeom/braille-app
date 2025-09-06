@@ -131,7 +131,9 @@ def save_json(all_cells):
 
 # ================== Streamlit UI ==================
 st.set_page_config(page_title="점자 변환기 + 점자로 연동", page_icon="🟡", layout="wide")
-
+st.caption("👤 제작자: 표석범")
+st.caption("📅 제작일: 2025-09-07")
+st.caption("🔖 버전: v1.0.0")
 st.title("🟡 점자 붙여넣기 변환기 (○/● & ⠁⠟⠬ 지원 + 대지 출력)")
 st.caption("jumjaro.org 사이트를 아래에 띄우고, 변환된 점자를 붙여넣어 DXF/SVG/JSON 파일로 변환할 수 있습니다.")
 
@@ -203,3 +205,4 @@ if st.button("변환 실행"):
 
     except Exception as e:
         st.error(f"입력 오류: {e}")
+
